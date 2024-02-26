@@ -1,16 +1,14 @@
 import feedparser
 from bs4 import BeautifulSoup
 from requests import get
-from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.http import JsonResponse
-from bs4 import SoupStrainer
 from .utils import extractFindAllData
 # Create your views here.
 
 @api_view(['GET'])
-def GetNews(request):
+def GetAllNews(request):
     if request.method == 'GET':
         feed = feedparser.parse("https://www.cnnindonesia.com/rss")
 

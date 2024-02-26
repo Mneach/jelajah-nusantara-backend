@@ -90,11 +90,11 @@ WSGI_APPLICATION = 'jelajahNusantaraBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jelajah_nusantara',
-        'USER' : 'root',
-        'PASSWORD' : '',
-        'HOST' : '127.0.0.1',
-        'PORT' : '3306'
+        'NAME': os.getenv("DATABASE_NAME"),
+        'USER' : os.getenv("DATABASE_USER"),
+        'PASSWORD' : os.getenv("DATABASE_PASSWORD"),
+        'HOST' : os.getenv("DATABASE_HOST"),
+        'PORT' : os.getenv("DATABASE_PORT")
     }
 }
 
