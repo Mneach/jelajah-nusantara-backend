@@ -35,16 +35,19 @@ following:
 
 ```
 (venv) path\to\project\jelajah-nusantara-backend>
-
-2. The project will rely on a whole bunch of 3rd party packages (requirements) to function. Install the project requirements. Add the following code to you terminal.
-
 ```
 
+2. The project will rely on a whole bunch of 3rd party packages (requirements)
+   to function. Install the project requirements. Add the following code to you
+   terminal.
+
+```
 pip install -r requirements.txt
 
 ```
 
-3. Create a env file to store information that is specific to our working environment. Use the following command in your terminal.
+3. Create a env file to store information that is specific to our working
+   environment. Use the following command in your terminal.
 
 ```
 
@@ -57,7 +60,8 @@ copy .env.example .env
 ```
 
 4. Run the following command to make and apply the migrations to the database
-   > Note: I'm using mysql database, you should input your datbase name, database credentials, database host, and database port into your .env file
+    > Note: I'm using mysql database, you should input your datbase name,
+    > database credentials, database host, and database port into your .env file
 
 ```
 
@@ -68,7 +72,10 @@ python manage.py makemigrations python manage.py migrate
     > the last argument to specify the port
 
 ```
+
 python manage.py runserver
+
 ```
 
 ---
+```
