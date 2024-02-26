@@ -43,20 +43,17 @@ following:
 
 ```
 pip install -r requirements.txt
-
 ```
 
 3. Create a env file to store information that is specific to our working
    environment. Use the following command in your terminal.
 
 ```
-
 # windows machine
 
 copy .env.example .env
 
 #mac/linux cp .env.example .env
-
 ```
 
 4. Run the following command to make and apply the migrations to the database
@@ -64,18 +61,17 @@ copy .env.example .env
     > database credentials, database host, and database port into your .env file
 
 ```
-
-python manage.py makemigrations python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+```
 
 5. To run the server, run the following command
     > Note: The server will run through default port which is 8000, you can add
     > the last argument to specify the port
 
 ```
-
 python manage.py runserver
 
 ```
 
 ---
-```
