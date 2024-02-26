@@ -50,10 +50,10 @@ pip install -r requirements.txt
 
 ```
 # windows machine
-
 copy .env.example .env
 
-#mac/linux cp .env.example .env
+#mac/linux cp
+.env.example .env
 ```
 
 4. Run the following command to make and apply the migrations to the database
