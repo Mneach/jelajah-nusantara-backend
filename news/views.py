@@ -39,4 +39,4 @@ def GetNewsDetail(request):
                 "message": "error!",
             })
 
-        return JsonResponse(data, safe=False)
+        return Response(data[0])
