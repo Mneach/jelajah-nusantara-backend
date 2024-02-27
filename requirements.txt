@@ -5,3 +5,4 @@ djangorestframework
 pymysql
 python-dotenv
 feedparser
+django-cors-headers
