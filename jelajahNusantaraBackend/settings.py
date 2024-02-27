@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-$@q*^_)5$$mh-ky#z@=^&gaxyu8b1=!-iu^v1zky7458*#4t(y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -43,11 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # LOCAL
-    'api',
-    'users',
-    'province',
-    'news',
-    'chatbot',
+    'api.apps.ApiConfig',
+    'users.apps.UsersConfig',
+    'province.apps.ProvinceConfig',
+    'news.apps.NewsConfig',
+    'chatbot.apps.ChatbotConfig',
 
     # Third Party package
     'rest_framework',
@@ -64,18 +64,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware",
 ]
-
-CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ALLOW_HEADERS = (
-    "accept",
-    "authorization",
-    "contenttype",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-    "baseurl"
-)
 
 ROOT_URLCONF = 'jelajahNusantaraBackend.urls'
 
@@ -153,3 +141,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True
