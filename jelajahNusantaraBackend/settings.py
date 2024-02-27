@@ -70,7 +70,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_HEADERS = (
     "accept",
     "authorization",
-    "content-type",
+    "contenttype",
     "user-agent",
     "x-csrftoken",
     "x-requested-with",
