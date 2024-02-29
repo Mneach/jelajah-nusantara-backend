@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'province.apps.ProvinceConfig',
     'news.apps.NewsConfig',
     'chatbot.apps.ChatbotConfig',
+    'island.apps.IslandConfig',
+    'content.apps.ContentConfig',
 
     # Third Party package
     'rest_framework',
@@ -96,7 +98,8 @@ DATABASES = {
         'USER' : os.getenv("DATABASE_USER"),
         'PASSWORD' : os.getenv("DATABASE_PASSWORD"),
         'HOST' : os.getenv("DATABASE_HOST"),
-        'PORT' : os.getenv("DATABASE_PORT")
+        'PORT' : os.getenv("DATABASE_PORT"),
+        'OPTIONS': {'init_command': 'SET default_storage_engine=INNODB'},
     }
 }
 
