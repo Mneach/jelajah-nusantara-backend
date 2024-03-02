@@ -25,5 +25,6 @@ urlpatterns = [
     path('island/', include('island.urls')),
     path('chatbot/', include('chatbot.urls')),
     path('news/', include('news.urls')),
+    path('scrapping/', include('scrapping.urls')),
     path('', include('api.urls'))
 ]

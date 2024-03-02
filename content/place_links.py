@@ -1,12 +1,9 @@
 aceh_urls = [
     "https://id.wikipedia.org/wiki/Masjid_Baiturrahman_Banda_Aceh",
-    "https://id.wikipedia.org/wiki/Iskandar_Muda_dari_Aceh",
-    "https://id.wikipedia.org/wiki/PLTD_Apung",
     "https://id.wikipedia.org/wiki/Museum_Tsunami_Aceh",
     "https://id.wikipedia.org/wiki/Museum_Aceh",
     "https://id.wikipedia.org/wiki/Masjid_Baiturrahim_Ulee_Lheue",
     "https://id.wikipedia.org/wiki/Gunung_Seulawah_Agam",
-    "https://id.wikipedia.org/wiki/Iskandar_Muda",
     "https://id.wikipedia.org/wiki/Masjid_Tua_Indra_Puri",
     "https://id.wikipedia.org/wiki/Pulau_Weh",
     "https://id.wikipedia.org/wiki/Tangse,_Pidie",
@@ -72,8 +69,6 @@ sumatera_barat_urls = [
     "https://id.wikipedia.org/wiki/Benteng_Van_der_Capellen",
     "https://id.wikipedia.org/wiki/Istana_Basa_Pagaruyung",
     "https://id.wikipedia.org/wiki/Air_Terjun_Lembah_Anai",
-    "https://id.wikipedia.org/wiki/Pusat_Dokumentasi_dan_Informasi_Kebudayaan_Minangkabau",
-    "https://id.wikipedia.org/wiki/Rumah_Gadang_Kampai_Nan_Panjang",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Kerinci_Seblat",
     "https://id.wikipedia.org/wiki/Danau_Singkarak",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Kerinci_Seblat",
@@ -90,7 +85,6 @@ riau_place_urls = {
     "https://id.wikipedia.org/wiki/Masjid_Jami_Air_Tiris",
     "https://id.wikipedia.org/wiki/Candi_Muara_Takus",
     "https://id.wikipedia.org/wiki/Pacu_Jalur",
-    "https://id.wikipedia.org/wiki/Kesultanan_Pelalawan",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Tesso_Nilo",
     "https://id.wikipedia.org/wiki/Benteng_Tujuh_Lapis",
     "https://id.wikipedia.org/wiki/Istana_Siak_Sri_Indrapura",
@@ -106,10 +100,8 @@ kepulauan_riau_urls = {
 jambi_urls = {
     "https://id.wikipedia.org/wiki/Candi_Solok_Sipin",
     "https://id.wikipedia.org/wiki/Danau_Sipin",
-    "https://id.wikipedia.org/wiki/Gentala_Arasy",
     "https://id.wikipedia.org/wiki/Masjid_Agung_Al-Falah",
     "https://id.wikipedia.org/wiki/Museum_Perjuangan_Rakyat_Jambi",
-    "https://id.wikipedia.org/wiki/Batang_Hari",
     "https://id.wikipedia.org/wiki/Tugu_Keris_Siginjai",
     "https://id.wikipedia.org/wiki/Masjid_Agung_Pondok_Tinggi",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Kerinci_Seblat",
@@ -178,9 +170,7 @@ bangka_belitung_urls = {
 }
 
 gorontalo_urls = {
-    "https://id.wikipedia.org/wiki/Monumen_Nani_Wartabone",
     "https://id.wikipedia.org/wiki/Benteng_Otanaha",
-    "https://id.wikipedia.org/wiki/Monumen_B.J._Habibie",
     "https://id.wikipedia.org/wiki/Pulau_Saronde",
     "https://id.wikipedia.org/wiki/Suaka_Margasatwa_Nantu",
 }
@@ -278,7 +268,7 @@ jawa_barat_urls = {
 
 banten_urls = {
     "https://id.wikipedia.org/wiki/Taman_Nasional_Ujung_Kulon",
-    "https://id.wikipedia.org/wiki/Anyar,_Serang ( butuh ambil gambar sendiri )",
+    "https://id.wikipedia.org/wiki/Anyar,_Serang",
 }
 
 jawa_tengah_urls = {
@@ -364,7 +354,6 @@ yogyakarta_urls = {
     "https://id.wikipedia.org/wiki/Candi_Kalasan",
     "https://id.wikipedia.org/wiki/Candi_Banyunibo",
     "https://id.wikipedia.org/wiki/Tebing_Breksi",
-    "https://id.wikipedia.org/wiki/Museum_Monumen_Yogya_Kembali",
     "https://id.wikipedia.org/wiki/Museum_Affandi",
     "https://id.wikipedia.org/wiki/Kaliurang",
     "https://id.wikipedia.org/wiki/Kaliadem",
@@ -421,7 +410,6 @@ jawa_timur_urls = {
     "https://id.wikipedia.org/wiki/Keraton_Sumenep",
     "https://id.wikipedia.org/wiki/Jembatan_Nasional_Suramadu",
     "https://id.wikipedia.org/wiki/Pantai_Prigi",
-    "https://id.wikipedia.org/wiki/Makam_Soekarno",
     "https://id.wikipedia.org/wiki/Pantai_Serang",
     "https://id.wikipedia.org/wiki/Gunung_Kelud",
     "https://id.wikipedia.org/wiki/Pantai_Tambakrejo",
@@ -463,7 +451,6 @@ bali_urls = {
     "https://id.wikipedia.org/wiki/Paviliun_Kerta_Gosa",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Bali_Barat",
     "https://id.wikipedia.org/wiki/Air_Terjun_Tegenungan",
-    "https://id.wikipedia.org/wiki/Monumen_Bajra_Sandhi",
     "https://id.wikipedia.org/wiki/Bali_Safari_%26_Marine_Park",
     "https://id.wikipedia.org/wiki/Mandala_Wisata_Wenara_Wana",
 }
@@ -493,7 +480,6 @@ kalimantan_barat_urls = {
     "https://id.wikipedia.org/wiki/Taman_Nasional_Betung_Kerihun",
     "https://id.wikipedia.org/wiki/Kepulauan_Karimata",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Gunung_Palung",
-    "https://id.wikipedia.org/wiki/Makam_Juang_Mandor",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Bukit_Baka-Bukit_Raya",
     "https://id.wikipedia.org/wiki/Cagar_Alam_Raya_Pasi",
     "https://id.wikipedia.org/wiki/Museum_Kapuas_Raya",
@@ -517,8 +503,6 @@ kalimantan_selatan_urls = {
     "https://id.wikipedia.org/wiki/Museum_Lambung_Mangkurat",
     "https://id.wikipedia.org/wiki/Museum_Waja_Sampai_Ka_Puting",
     "https://id.wikipedia.org/wiki/Masjid_Sultan_Suriansyah",
-    "https://id.wikipedia.org/wiki/Kompleks_Makam_Sultan_Suriansyah",
-    "https://id.wikipedia.org/wiki/Kompleks_Makam_Pangeran_Antasari",
     "https://id.wikipedia.org/wiki/Sungai_Barito",
     "https://id.wikipedia.org/wiki/Sungai_Kapuas",
     "https://id.wikipedia.org/wiki/Taman_Nasional_Tanjung_Puting",
@@ -565,7 +549,6 @@ sulawesi_selatan_urls = {
     "https://id.wikipedia.org/wiki/Taman_Prasejarah_Leang_Leang",
     "https://id.wikipedia.org/wiki/Kabupaten_Tana_Toraja",
     "https://id.wikipedia.org/wiki/Danau_Tempe",
-    "https://id.wikipedia.org/wiki/Monumen_Mandala",
     "https://id.wikipedia.org/wiki/Pulau_Samalona",
     "https://id.wikipedia.org/wiki/Fort_Rotterdam",
     "https://id.wikipedia.org/wiki/Air_terjun_Bantimurung",
@@ -673,6 +656,39 @@ papua_barat_urls = {
     "https://id.wikipedia.org/wiki/Taman_Nasional_Teluk_Cenderawasih",
 }
 
+category_data = {
+    "Masjid": "https://api2.kemenparekraf.go.id/storage/app/uploads/public/624/18c/863/62418c8630fa8490512129.jpg",
+    "Museum": "https://media.cntraveler.com/photos/5a7b4d2741ac86020aab80eb/16:9/w_2560,c_limit/Natural-History-Museum_Trustees-of-the-Natural-History-Museum,-London__2018_20170718-Blue-Whale-Hintze-Hall-1-Credit--Trustees-of-NHM.webp",
+    "Pulau": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/all-revision-destination/rajaampatH.jpg",
+    "Taman Nasional": "https://i.natgeofe.com/n/c1d2d9ea-061e-4a74-9ed2-6c716d0e3f78/padar-island.jpg",
+    "Gunung": "https://cdn.idntimes.com/content-images/community/2017/07/taman-nasional-bromo-tengger-jawa-timur-indonesia1-fec4c7dbdd891361257e3ac013896e6f.jpg",
+    "Istana": "https://edensorhills.com/wp-content/uploads/2022/12/Istana-Bogor-Bogor-Palace-1024x576.jpg",
+    "Kantor": "https://png.pngtree.com/background/20230604/original/pngtree-modern-corporate-business-office-background-wallpaper-picture-image_2873050.jpg",
+    "Danau": "https://img2.beritasatu.com/cache/beritasatu/960x620-3/2023/10/1696833602-2000x1333.webp",
+    "Bukit": "https://ik.imagekit.io/tvlk/blog/2021/08/shutterstock_2012584787.jpg?tr=dpr-2,w-675",
+    "Pantai": "https://www.indonesia.travel/content/dam/indtravelrevamp/user-generated-content/ugc-july-2020/gb-en/5.jpg",
+    "Jam": "https://salsawisata.com/wp-content/uploads/2022/03/Jam-Gadang-Bukittinggi.jpg",
+    "Jembatan": "https://img.merahputih.com/media/ef/88/ad/ef88adb75ebeec1defde0076c30e41ea.jpg",
+    "Lembah": "https://ksmtour.com/media/images/articles7/lembah-harau-sumatera-barat.jpg",
+    "Benteng": "https://www.indonesia.travel/content/dam/indtravelrevamp/id-id/ide-liburan/mau-wisata-unik-diindonesiaaja-intip-6-benteng-dari-era-kolonial-ini-yuk/thumbnail.jpg",
+    "Cagar": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/5-cagar-biosfer-ini-cocok-jadi-destinasi-wisata-edukatif/wakatobi.jpg",
+    "Candi": "https://www.indonesia.travel/content/dam/indtravelrevamp/user-generated-content/ugc-july-2020/gb-en/3.jpg",
+    "Sungai": "https://awsimages.detik.net.id/community/media/visual/2022/11/18/pola-aliran-sungai_169.jpeg?w=1200",
+    "Air Terjun": "https://ik.imagekit.io/tvlk/blog/2023/07/Tibumana-Waterfall.jpg?tr=dpr-2,w-675",
+    "Telaga": "https://www.rayadventure.com/wp-content/uploads/2018/06/telaga-sarangan-magetan.jpg",
+    "Tugu": "https://asset.kompas.com/crops/ahyz8cGMziGomWaZj-zHbXpP4HA=/178x83:973x613/750x500/data/photo/2021/12/27/61c9b9883a01d.png",
+    "Teluk": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/02/IMG_20230402_135500-3733925383.jpg",
+    "Rumah": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/jawapos/2022/11/dusun-bambu.jpg",
+    "Monumen": "https://www.iwarebatik.org/wp-content/uploads/2019/11/monas.jpg",
+    "Perbelanjaan": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/77/2023/09/21/wisata-mall-di-semarang-851855348.jpg",
+    "Kota Tua Jakarta": "https://asset.kompas.com/crops/t81xct6MASs87SPsIfWbKP_pOlI=/0x0:0x0/750x500/data/photo/2023/04/24/6446975b10016.jpg",
+    "Taman": "https://www.itrip.id/wp-content/uploads/2020/05/Tentang-Taman-Bunga-Nusantara.jpg.webp",
+    "Gedung": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Jakarta_Skyline_Part_2.jpg/600px-Jakarta_Skyline_Part_2.jpg",
+    "Curug": "https://akcdn.detik.net.id/visual/2020/12/16/air-terjun-banyumala_169.jpeg?w=650",
+    "Hutan": "https://cdn.idntimes.com/content-images/post/20220714/orchid-forest2-97a8bb935cdb3d018ff75f640ce27ed9.jpg",
+    "Kabupaten": "https://upload.wikimedia.org/wikipedia/commons/4/49/Rumah_Adat_Mamuju.jpg"
+}
+
 province_place_urls = {
     "ACEH" : aceh_urls,
     "SUMATERA UTARA" : sumatera_utara_urls,
@@ -709,11 +725,3 @@ province_place_urls = {
     "PAPUA" : papua_urls,
     "PAPUA BARAT" : papua_barat_urls,
 }
-
-
-
-# DONE
-# - ACEH
-# - SUMATERA UTARA
-# - SUMATERA BARAT
-# - 
