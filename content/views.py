@@ -5,24 +5,45 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .utils import scrappingData
 from .place_links import province_place_urls
+from .food_links import province_food_urls
+from .culture_links import province_culture_urls
 from .models import Content
 from province.models import Province
 from .serializers import ContentSerializer
 
 @api_view(['POST'])
-def InsertALLFoodsContentAPIView(request):
-    for province_name, urls in province_place_urls.items():
-        print(f"Province: {province_name}")
+def InsertALLCulturesContentAPIView(request):
+    for province_name, urls in province_culture_urls.items():
+        print(f"Culture From Province : {province_name}")
         province_id = Province.objects.filter(name=province_name).first().id
-        datas = scrappingData(urls)
+        datas = scrappingData(urls, "Culture")
         for data in datas:
             Content.objects.create(
                 title= data.get("title"),
                 content = data.get('content'),
                 image_url = data.get('image_url'),
-                content_type = "Place",
+                content_type = "Culture",
                 province_id = province_id
             )
+        print(f"Successfully Insert Culture From Province : {province_name}")            
+
+    return Response("Success")
+
+@api_view(['POST'])
+def InsertALLFoodsContentAPIView(request):
+    for province_name, urls in province_food_urls.items():
+        print(f"Food From Province : {province_name}")
+        province_id = Province.objects.filter(name=province_name).first().id
+        datas = scrappingData(urls, "Food")
+        for data in datas:
+            Content.objects.create(
+                title= data.get("title"),
+                content = data.get('content'),
+                image_url = data.get('image_url'),
+                content_type = "Food",
+                province_id = province_id
+            )
+        print(f"Successfully Insert Food From Province : {province_name}")            
 
     return Response("Success")
 
@@ -31,7 +52,7 @@ def InsertALLPlaceContentAPIView(request):
     for province_name, urls in province_place_urls.items():
         print(f"Province: {province_name}")
         province_id = Province.objects.filter(name=province_name).first().id
-        datas = scrappingData(urls)
+        datas = scrappingData(urls, "Place")
         for data in datas:
             Content.objects.create(
                 title= data.get("title"),
@@ -56,7 +77,7 @@ def InsertContent(request):
     province_urls = province_place_urls[province_name]
 
     # SCRAPPING DATA
-    datas = scrappingData(province_urls)
+    datas = scrappingData(province_urls, "Place")
 
     # INSERT INTO DATABASE
     for data in datas:
@@ -84,7 +105,7 @@ def GetAllContentDataInAllProvinceAPIView(request):
 
     for province, urls in province_place_urls.items():
         print(f"Province: {province}")
-        data = scrappingData(urls)
+        data = scrappingData(urls, "Place")
         res.append(data)
 
     return Response(res)
@@ -93,5 +114,5 @@ def GetAllContentDataInAllProvinceAPIView(request):
 def GetAllContentDataInProvinceAPIView(request):
     province_name = request.GET.get('province_name')
     province_urls = province_place_urls[province_name]
-    res = scrappingData(province_urls)
+    res = scrappingData(province_urls, "Place")
     return Response(res)

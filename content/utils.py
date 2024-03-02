@@ -18,7 +18,7 @@ def generateImageByCategory(content):
 
     return url
 
-def getScrappingData(link):
+def getScrappingDataPlace(link):
     res = {}
     try:
         url = get(link)
@@ -55,10 +55,82 @@ def getScrappingData(link):
         }
     return res
 
-def scrappingData(links):
+def getScrappingDataFood(link):
+    res = {}
+    try:
+        url = get(link)
+        soup = BeautifulSoup(url.text, 'html.parser')
+        content_container = soup.find('main', class_="mw-body")
+        title = soup.find('span', class_="mw-page-title-main")
+        content = content_container.findAll(lambda tag: tag.name == 'p' and not tag.attrs)
+        image_url = content_container.find('img', class_="mw-file-element")
+        content = "\n".join(extractFindAllData(content))
+
+        # Handle title
+        if(title):
+            title = title.text
+        else:
+            title = soup.find('h1', class_="firstHeading mw-first-heading").text
+
+        if(image_url):
+            image_url = image_url.get('src')
+            res = {
+                "title": title,
+                "content": content,
+                "image_url" : image_url,
+            }
+
+    except Exception as error:
+        print(error)
+        res = {
+            "message": "error!",
+        }
+    return res
+
+def getScrappingDataCulture(link):
+    res = {}
+    try:
+        url = get(link)
+        soup = BeautifulSoup(url.text, 'html.parser')
+        content_container = soup.find('main', class_="mw-body")
+        title = soup.find('span', class_="mw-page-title-main")
+        content = content_container.findAll(lambda tag: tag.name == 'p' and not tag.attrs)
+        image_url = content_container.find('img', class_="mw-file-element")
+        content = "\n".join(extractFindAllData(content))
+
+        # Handle title
+        if(title):
+            title = title.text
+        else:
+            title = soup.find('h1', class_="firstHeading mw-first-heading").text
+
+        if image_url and image_url.get('src'):
+            res = {
+                "title": title,
+                "content": content,
+                "image_url" : image_url.get('src'),
+            }
+
+    except Exception as error:
+        print(error)
+        res = {
+            "message": "error!",
+        }
+    return res
+
+def scrappingData(links, content_type):
     res = []
     for link in links:
-        # print(link)
-        res.append(getScrappingData(link))
+        print(link)
+        scrappingRes = {}
+        if content_type == "Place":
+            scrappingRes = getScrappingDataPlace(link)
+        elif content_type == "Food":
+            scrappingRes = getScrappingDataFood(link)
+        elif content_type == "Culture":
+            scrappingRes = getScrappingDataCulture(link)
+        
+        if scrappingRes != {}:
+            res.append(scrappingRes)
 
     return res
