@@ -71,8 +71,8 @@ def InsertContent(request):
     return Response("success")
 
 @api_view(['GET'])
-def GetContentDetailAPIView(request):
-    place_title = request.GET.get('title')
+def GetContentDetailAPIView(request, title):
+    place_title = title.replace("-", " ")
     place = Content.objects.filter(title=place_title).first()
     serializer = ContentSerializer(place)
     return Response(serializer.data)

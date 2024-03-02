@@ -7,5 +7,5 @@ urlpatterns = [
     path('insertContent/' , views.InsertContent, name="insertContent"),
     path('insertALLPlaceContent/', views.InsertALLPlaceContentAPIView, name="insertALLPlaceContent"),
     path('insertALLFoodsContent/', views.InsertALLFoodsContentAPIView, name="insertALLFoodsContent"),
-    path('getContentDetail/', views.GetContentDetailAPIView, name="getContentDetailAPIView")
+    path('getContentDetail/<str:title>/', views.GetContentDetailAPIView, name="getContentDetailAPIView")
 ]
