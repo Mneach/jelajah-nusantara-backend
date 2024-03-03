@@ -3,7 +3,7 @@
 Dependency Requirement:
 
 -   Python 3 (Currently using: 3.11)
--   pip 22 (Currently using: 23.3.2)
+-   pip 22 (Currently using: 22)
 -   XAMPP (Currenyly using : 3.3.0)
 
 ---
