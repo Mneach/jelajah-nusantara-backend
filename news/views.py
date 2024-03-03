@@ -22,23 +22,31 @@ def GetNewsDetail(request):
             url = get(request.GET.get('url', ''))
             soup = BeautifulSoup(url.text, 'html.parser')
             content_container = soup.find('div', class_="grow-0 w-leftcontent min-w-0")
-            title = content_container.find('h1', class_="mb-2 text-[28px] leading-9 text-cnn_black").text
-            publish = content_container.find('div', class_="text-cnn_grey text-sm mb-4").text
+            title = soup.find('h1', class_="mb-2 text-[28px] leading-9 text-cnn_black").text
+            publish = soup.find('div', class_= lambda x: x and 'text-cnn_grey' in x.split() and 'text-sm' in x.split()).text
             description_container = content_container.find('div', class_= lambda x: x and 'detail-text' in x.split() and 'text-cnn_black' in x.split())
             description = description_container.findAll(lambda tag: tag.name == 'p' and not tag.attrs)
             photo = content_container.find('div', class_='detail-image my-5')
-
             if photo:
                 photo = photo.find("img").get("src")
             else:
                 photo = soup.find("meta", {"name" : "dtk:thumbnailUrl"}).get("content")
+            paragraph = extractFindAllData(description)
 
-            data.append({
-                "title": title,
-                "publish": publish,
-                "photo" : photo,
-                "description": extractFindAllData(description),
-            })
+            if len(paragraph) > 0:
+                data.append({
+                    "title": title,
+                    "publish": publish,
+                    "photo" : photo,
+                    "description": paragraph,
+                })
+            else:
+                data.append({
+                    "title": title,
+                    "publish": publish,
+                    "photo" : photo,
+                    "description": [],
+                })
         except Exception as error:
             print(error)
             data.append({

@@ -10,7 +10,7 @@ from django.http import JsonResponse
 
 def getCompletion(prompt):
     client = OpenAI(
-        api_key = os.getenv("OPENAI_KEY_2"),
+        api_key = os.getenv("OPENAI_KEY_3"),
     )
     chat_completion = client.chat.completions.create(
         messages=[
