@@ -24,9 +24,15 @@ def GetNewsDetail(request):
             content_container = soup.find('div', class_="grow-0 w-leftcontent min-w-0")
             title = content_container.find('h1', class_="mb-2 text-[28px] leading-9 text-cnn_black").text
             publish = content_container.find('div', class_="text-cnn_grey text-sm mb-4").text
-            description_container = content_container.find('div', class_="detail-text text-cnn_black text-sm grow min-w-0")
+            description_container = content_container.find('div', class_= lambda x: x and 'detail-text' in x.split() and 'text-cnn_black' in x.split())
             description = description_container.findAll(lambda tag: tag.name == 'p' and not tag.attrs)
-            photo = content_container.find('div', class_='detail-image my-5').find("img").get("src")
+            photo = content_container.find('div', class_='detail-image my-5')
+
+            if photo:
+                photo = photo.find("img").get("src")
+            else:
+                photo = soup.find("meta", {"name" : "dtk:thumbnailUrl"}).get("content")
+
             data.append({
                 "title": title,
                 "publish": publish,
